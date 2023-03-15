@@ -8,9 +8,9 @@ public class P211ObjectOutputStreamSerialization {
     public static void main(String[] args)
             throws IOException {
         CarObject car1 = new CarObject("Ford", "Mustnag", 1980, 200);
-        CarObject car2 = new CarObject("Dodge", "Mustnag", 1980, 200);
-        CarObject car3 = new CarObject("Fiat", "Mustnag", 1980, 200);
-        CarObject car4 = new CarObject("FSO", "Mustnag", 1980, 200);
+        CarObject car2 = new CarObject("Dodge", "Challenger", 1972, 350);
+        CarObject car3 = new CarObject("Fiat", "126p", 1980, 110);
+        CarObject car4 = new CarObject("FSO", "Polonez", 1990, 180);
         ArrayList<CarObject> cars = new ArrayList<>();
         cars.add(car1);
         cars.add(car2);

@@ -8,6 +8,9 @@ public class CarObject implements Serializable {
     public int topSpeed;
     private transient int id;
 
+    public CarObject(){
+    }
+
     public CarObject(String manufacturer, String name, int productionYear, int topSpeed) {
         this.manufacturer = manufacturer;
         this.name = name;
@@ -54,6 +57,9 @@ public class CarObject implements Serializable {
 
     public void setId(int id) {
         this.id = id;
+    }
+    public void setAutoId() {
+        this.id = ++counter;
     }
 
     @Override

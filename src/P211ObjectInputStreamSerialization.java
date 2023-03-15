@@ -9,11 +9,12 @@ public class P211ObjectInputStreamSerialization {
         try {
             while (true) {
                 CarObject car = (CarObject) in.readObject();
+                car.setAutoId();
                 System.out.println(car);
             }
 
-        } catch (EOFException  e) {
-           // e.printStackTrace();
+        } catch (EOFException e) {
+            // e.printStackTrace();
 
         } catch (Exception e) {
             e.printStackTrace();
