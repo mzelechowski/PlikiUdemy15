@@ -8,13 +8,13 @@ public class P206FileReaderExample {
             int num;
             fr = new FileReader("files\\fileWriterTest.txt");
             //zwrócenie -1 oznacza koniec pliku
-            while((num=fr.read())!=-1) {
-                System.out.print((char)num);
+            while ((num = fr.read()) != -1) {
+                System.out.print((char) num);
             }
-            } catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            if(fr!=null) fr.close();
+            if (fr != null) fr.close();
         }
     }
 }
